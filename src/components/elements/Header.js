@@ -22,11 +22,33 @@ const StyledHeader = styled.div`
   }
 `;
 
+const StyledRMDBLogo = styled.img`
+  width: 250px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 500px) {
+    width: 150px;
+    margin-top: 5px;
+  }
+`;
+
+const StyledTMDBLogo = styled.img`
+  width: 122px;
+  margin-top: 25px;
+  float: right;
+
+  @media screen and (max-width: 500px) {
+    display: inline-block;
+    width: 80px;
+    margintop: 0px;
+  }
+`;
+
 const Header = () => (
   <StyledHeader>
     <div className='header-content'>
-      <img src={RMDBLogo} alt='rmdb-logo' />
-      <img src={TMDBLogo} alt='tmdb-logo' />
+      <StyledRMDBLogo src={RMDBLogo} alt='rmdb-logo' />
+      <StyledTMDBLogo src={TMDBLogo} alt='tmdb-logo' />
     </div>
   </StyledHeader>
 );
