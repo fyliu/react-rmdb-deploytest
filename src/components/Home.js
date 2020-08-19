@@ -54,7 +54,7 @@ const Home = () => {
                 : NoImage
             }
             movieId={movie.id}
-            movieName={movie.orignal_title}
+            movieName={movie.original_title}
           />
         ))}
       </Grid>
