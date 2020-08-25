@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import NoImage from '../images/no_image.jpg';
 
@@ -15,9 +16,13 @@ const Actor = ({ actor }) => (
       }
       alt='actorthumb'
     />
-    <span className="actor-name">{actor.name}</span>
-    <span className="actor-character">{actor.character}</span>
+    <span className='actor-name'>{actor.name}</span>
+    <span className='actor-character'>{actor.character}</span>
   </StyledActor>
 );
+
+Actor.propTypes = {
+  actor: PropTypes.object,
+};
 
 export default Actor;
